@@ -1,0 +1,1129 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #20252b;
+}
+
+.navbar {
+    min-height: 80px;
+    padding: 12px 35px;
+    background-color: #ffffff !important;
+    border-bottom: 3px solid #1e3a5f;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+    margin-right: 30px;
+}
+
+.logo {
+    width: 75px;
+    height: 55px;
+    object-fit: contain;
+    
+}
+
+.form-inline {
+    display: flex;
+    flex: 1;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.categories_select {
+    height: 45px;
+    padding: 0 15px;
+    border: 2px solid #d6dce2;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    background-color: #f8f9fa;
+    color: #263746;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+}
+
+.search_button {
+    height: 45px;
+    flex: 1;
+    padding: 0 18px;
+    border: 2px solid #d6dce2;
+    border-radius: 0 8px 8px 0;
+    outline: none;
+    font-size: 14px;
+    background-color: #ffffff;
+    transition: 0.3s ease;
+}
+
+.search_button:focus {
+    border-color: #1e73be;
+    box-shadow: 0 0 7px rgba(30, 115, 190, 0.2);
+}
+
+.search_button::placeholder {
+    color: #8a949e;
+}
+
+.login {
+    margin-left: 25px;
+    padding: 9px 16px;
+    border: 1px solid #1e3a5f;
+    border-radius: 7px;
+    background-color: #1e3a5f;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login:hover {
+    background-color: #f28c28;
+    border-color: #f28c28;
+    transform: translateY(-2px);
+}
+
+.user_icon {
+    margin-right: 7px;
+    font-size: 17px;
+}
+
+.navbar p {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #263746;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.navbar p i {
+    font-size: 20px;
+    margin-right: 7px;
+    color: #e4572e;
+}
+
+.navbar p:hover {
+    color: #e4572e;
+}
+
+.fixed {
+    max-width: 1100px;
+    margin-top: 18px !important;
+}
+
+.fixed .row {
+    background-color: #1e3a5f;
+    border-radius: 9px;
+    padding: 5px 0;
+    box-shadow: 0 4px 12px rgba(30, 58, 95, 0.2);
+}
+
+.fixed .col-2 {
+    padding: 0;
+    text-align: center;
+}
+
+.section {
+    display: block;
+    padding: 12px 5px;
+    color: #ffffff;
+    text-decoration: none !important;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+}
+
+.section:hover {
+    background-color: #f28c28;
+    color: #ffffff;
+}
+
+#home {
+    padding-bottom: 30px;
+}
+
+.summer_img {
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 14px;
+    background-color: #e9edf1;
+    border: 1px solid #d9dfe5;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.summer_img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.summer_img:hover img {
+    transform: scale(1.03);
+}
+
+.box {
+    min-height: 95px;
+    background-color: #ffffff;
+    border-radius: 10px !important;
+    border: 1px solid #dfe4e8;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    border-color: #f28c28;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.10) !important;
+}
+
+.icon {
+    font-size: 28px;
+    color: #1e73be;
+}
+
+.title {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #58636e;
+    font-weight: 500;
+}
+
+#Men {
+    padding: 30px 0 60px;
+}
+
+.men-image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 14px;
+    background-color: #e8edf2;
+    border: 1px solid #d9dfe5;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.men-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.men-image:hover img {
+    transform: scale(1.03);
+}
+
+.top-wear {
+    margin: 18px 0 5px;
+    padding-left: 10px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #1e3a5f;
+    position: relative;
+}
+
+.top-wear::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 26px;
+    margin-right: 10px;
+    vertical-align: -3px;
+    background-color: #f28c28;
+    border-radius: 4px;
+}
+
+.fashion-box {
+    height: 350px;
+    background-color: #ffffff;
+    border-radius: 11px !important;
+    overflow: hidden;
+    border: 1px solid #dfe4e8;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.fashion-box:hover {
+    transform: translateY(-7px);
+    border-color: #1e73be;
+    box-shadow: 0 10px 22px rgba(30, 115, 190, 0.15) !important;
+}
+
+.shirts_image {
+    width: 100%;
+    height: 175px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    overflow: hidden;
+}
+
+.shirts_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+
+.fashion-box:hover .shirts_image img {
+    transform: scale(1.08);
+}
+
+.shirts_title {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 8px;
+    background-color: #ffffff;
+    border-top: 1px solid #edf0f2;
+}
+
+.shirts_title p {
+    margin: 0;
+    color: #263746;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.card-body {
+    padding: 18px;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.card-title {
+    margin-bottom: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1e3a5f;
+}
+
+.card-text {
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #e4572e;
+    margin-right: 8px;
+}
+
+.old-price {
+    font-size: 14px;
+    color: #999999;
+    text-decoration: line-through;
+}
+
+.card-body .btn {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 9px 15px;
+    border: none;
+    border-radius: 7px;
+    background-color: #1e3a5f;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.card-body .btn:hover {
+    background-color: #f28c28;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+
+@media (max-width: 991px) {
+    .navbar {
+        padding: 12px 20px;
+    }
+
+    .logo {
+        width: 65px;
+        height: 50px;
+    }
+
+    .form-inline {
+        max-width: 450px;
+    }
+
+    .login {
+        margin-left: 10px;
+        padding: 7px;
+    }
+
+    .summer_img {
+        height: 300px;
+    }
+
+    .men-image {
+        height: 280px;
+    }
+
+    .fashion-box {
+        height: 210px;
+    }
+
+    .shirts_image {
+        height: 160px;
+    }
+
+    .shirts_title {
+        height: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        min-height: auto;
+        padding: 12px 15px;
+        flex-wrap: wrap;
+    }
+
+    .navbar-brand {
+        margin-right: 10px;
+    }
+
+    .logo {
+        width: 55px;
+        height: 45px;
+    }
+
+    .form-inline {
+        order: 3;
+        width: 100%;
+        max-width: none;
+        margin-top: 12px;
+    }
+
+    .categories_select {
+        max-width: 115px;
+        padding: 0 7px;
+        font-size: 12px;
+    }
+
+    .search_button {
+        font-size: 13px;
+    }
+
+    .login {
+        margin-left: auto;
+        font-size: 12px;
+    }
+
+    .navbar p {
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    .navbar p i {
+        font-size: 16px;
+    }
+
+    .fixed {
+        margin: 10px 10px 0 !important;
+    }
+
+    .fixed .row {
+        padding: 3px 0;
+    }
+
+    .section {
+        padding: 10px 2px;
+        font-size: 11px;
+    }
+
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .summer_img {
+        height: 200px;
+        border-radius: 11px;
+    }
+
+    .box {
+        min-height: 85px;
+        padding: 10px !important;
+    }
+
+    .icon {
+        font-size: 22px;
+    }
+
+    .title {
+        font-size: 11px;
+    }
+
+    .men-image {
+        height: 200px;
+        border-radius: 11px;
+    }
+
+    .top-wear {
+        font-size: 21px;
+        margin-top: 10px;
+    }
+
+    .top-wear::before {
+        height: 21px;
+        width: 4px;
+    }
+
+    .fashion-box {
+        height: 190px;
+        border-radius: 9px !important;
+    }
+
+    .shirts_image {
+        height: 145px;
+        padding: 8px;
+    }
+
+    .shirts_title {
+        height: 45px;
+    }
+
+    .shirts_title p {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 450px) {
+    .login {
+        font-size: 10px;
+    }
+
+    .navbar p {
+        font-size: 10px;
+    }
+
+    .categories_select {
+        max-width: 95px;
+    }
+
+    .summer_img {
+        height: 160px;
+    }
+
+    .men-image {
+        height: 160px;
+    }
+
+    .fashion-box {
+        height: 170px;
+    }
+
+    .shirts_image {
+        height: 125px;
+    }
+
+    .shirts_title {
+        height: 45px;
+    }
+
+    .shirts_title p {
+        font-size: 10px;
+    }
+}
+.contact-section {
+    background: #f4f6f8;
+    padding: 70px 8%;
+}
+
+.contact-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 60px;
+    background: white;
+    padding: 45px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h2 {
+    font-size: 38px;
+    color: #102a43;
+    margin-bottom: 15px;
+}
+
+.contact-info > p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.contact-item span {
+    font-size: 25px;
+}
+
+.contact-item h4 {
+    margin: 0 0 5px;
+    color: #102a43;
+}
+
+.contact-item p {
+    margin: 0;
+    color: #666;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.contact-form h3 {
+    color: #102a43;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #f28c28;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #102a43;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #f28c28;
+    transform: translateY(-2px);
+}
+.product-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.product-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.details_bg {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.details_bg .d-flex {
+    align-items: center;
+}
+
+.details_image {
+    width: 48%;
+    height: 500px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+}
+
+.details_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.4s ease;
+}
+
+.details_image img:hover {
+    transform: scale(1.05);
+}
+
+.Product_info {
+    width: 52%;
+    padding: 0 35px;
+}
+
+.brand_info {
+    width: 100%;
+}
+
+.brand_title {
+    margin-bottom: 8px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e3a5f;
+}
+
+.brand_para {
+    margin-bottom: 12px;
+    font-size: 17px;
+    color: #555f69;
+}
+
+.rating {
+    display: inline-block;
+    margin: 5px 0 15px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background-color: #168a45;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.brand_info hr {
+    margin: 15px 0;
+    border: none;
+    border-top: 1px solid #e1e5e8;
+}
+
+.cost {
+    font-size: 28px;
+    font-weight: 700;
+    color: #e4572e;
+    margin-right: 10px;
+}
+
+.old_cost {
+    font-size: 17px;
+    color: #999999;
+    text-decoration: line-through;
+}
+
+.size {
+    margin-top: 25px;
+}
+
+.select_size {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #263746;
+}
+
+.size_button {
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+    border: 2px solid #d3d9df;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #263746;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.size_button:hover {
+    background-color: #1e3a5f;
+    border-color: #1e3a5f;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.size_button:focus {
+    background-color: #1e3a5f;
+    border-color: #1e3a5f;
+    color: #ffffff;
+    outline: none;
+}
+
+.cart {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.add_cart,
+.wishlist {
+    height: 48px;
+    padding: 0 25px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add_cart {
+    border: 2px solid #f28c28;
+    background-color: #f28c28;
+    color: #ffffff;
+}
+
+.add_cart:hover {
+    background-color: #e4572e;
+    border-color: #e4572e;
+    transform: translateY(-2px);
+}
+
+.wishlist {
+    border: 2px solid #1e3a5f;
+    background-color: #ffffff;
+    color: #1e3a5f;
+}
+
+.wishlist:hover {
+    background-color: #1e3a5f;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 767px) {
+    .details_bg {
+        width: 95%;
+        margin: 25px auto;
+        padding: 20px;
+    }
+
+    .details_bg .d-flex {
+        flex-direction: column;
+    }
+
+    .details_image {
+        width: 100%;
+        height: 350px;
+    }
+
+    .Product_info {
+        width: 100%;
+        padding: 25px 5px 5px;
+    }
+
+    .brand_title {
+        font-size: 24px;
+    }
+
+    .brand_para {
+        font-size: 15px;
+    }
+
+    .cost {
+        font-size: 24px;
+    }
+
+    .cart {
+        flex-direction: column;
+    }
+
+    .add_cart,
+    .wishlist {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .details_image {
+        height: 280px;
+    }
+
+    .details_bg {
+        padding: 15px;
+    }
+
+    .size_button {
+        width: 43px;
+        height: 43px;
+        margin-right: 5px;
+    }
+
+    .brand_title {
+        font-size: 21px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.login_bg {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f3f6f9;
+    color: #263746;
+}
+
+.login-page {
+    background: linear-gradient(
+        135deg,
+        #e9f1f8,
+        #f8f9fa
+    );
+}
+
+.login-card {
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #dfe5ea;
+    box-shadow: 0 10px 30px rgba(30, 58, 95, 0.12);
+}
+
+.brand-name {
+    margin-bottom: 5px;
+    font-size: 32px;
+    font-weight: 800;
+    color: #1e3a5f;
+}
+
+.welcome-text {
+    margin-bottom: 2px;
+    font-size: 21px;
+    font-weight: 600;
+    color: #263746;
+}
+
+.login-text {
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #7a858e;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #263746;
+}
+
+.input-group-text {
+    background-color: #f4f7f9;
+    border: 1px solid #d7dfe5;
+    color: #1e73be;
+}
+
+.form-control {
+    height: 45px;
+    border: 1px solid #d7dfe5;
+    font-size: 14px;
+    box-shadow: none !important;
+}
+
+.form-control:focus {
+    border-color: #1e73be;
+}
+
+.form-control::placeholder {
+    color: #a0a8ae;
+}
+
+.login-options {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.form-check-label {
+    font-size: 13px;
+    color: #68747d;
+}
+
+.forgot-password {
+    font-size: 13px;
+    color: #1e73be;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    color: #f28c28;
+    text-decoration: none;
+}
+
+.login-button {
+    width: 100%;
+    height: 46px;
+    border: none;
+    border-radius: 7px;
+    background-color: #1e3a5f;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #f28c28;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+    color: #9ba4ab;
+    font-size: 12px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #e0e5e9;
+}
+
+.divider span {
+    padding: 0 12px;
+}
+
+.google-button {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #d7dfe5;
+    border-radius: 7px;
+    background-color: #ffffff;
+    color: #3c4650;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.google-button i {
+    margin-right: 8px;
+    color: #db4437;
+}
+
+.google-button:hover {
+    background-color: #f5f7f9;
+    border-color: #1e73be;
+}
+
+.signup-section {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.signup-section p {
+    margin: 0;
+    font-size: 14px;
+    color: #737e87;
+}
+
+.signup-section a {
+    color: #1e73be;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.signup-section a:hover {
+    color: #f28c28;
+}
+
+.back-home {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-home a {
+    color: #68747d;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.back-home a:hover {
+    color: #1e3a5f;
+}
+
+.back-home i {
+    margin-right: 5px;
+}
+
+@media (max-width: 576px) {
+
+    .login-card {
+        padding: 28px 20px;
+    }
+
+    .brand-name {
+        font-size: 28px;
+    }
+
+    .welcome-text {
+        font-size: 19px;
+    }
+
+    .login-options {
+        font-size: 12px;
+    }
+
+    .forgot-password {
+        font-size: 12px;
+    }
+}
+
